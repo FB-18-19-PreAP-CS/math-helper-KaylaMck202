@@ -26,10 +26,17 @@ def distance(x1,x2,y1,y2):
         
     
 def area_trapezoid(b1,b2,h):
-    ''
-    pass
+    '''gives area of a trapezoid
+    '''
+    b3 = b1+b2
+    a= b3*h
+    t= a/2
+    return t
     
 def area_circ(r):
+    '''gives area of a circle
+    '''
+    r2= r**2
     pass
 def midpoint(x1,x2,y1,y2):
     pass
