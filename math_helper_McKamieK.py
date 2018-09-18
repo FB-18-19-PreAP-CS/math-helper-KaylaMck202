@@ -19,6 +19,8 @@ def distance(x1,x2,y1,y2):
         11.18033988749895
         >>> distance(5,9,4,7)
         5
+        >>> distance(10,15,6,12)
+        7.810249675906654
         '''
         a=x2-x1
         b= y2-y1
@@ -30,7 +32,7 @@ def distance(x1,x2,y1,y2):
         
     
 def area_trapezoid(b1,b2,h):
-    '''gives area of a trapezoid
+    '''returns the area of a trapezoid
     '''
     b3 = b1+b2
     a= b3*h
@@ -38,14 +40,14 @@ def area_trapezoid(b1,b2,h):
     return t
     
 def area_circ(r):
-    '''gives area of a circle
+    '''returns the area of a circle
     '''
     r2= r**2
     r3 = r2*3.14
     return r3
     
 def midpoint(x1,x2,y1,y2):
-    '''gives the midpoint of a line
+    '''returns the midpoint of a line
     '''
     x3= x1+x2
     y3= y1+y2
@@ -54,7 +56,7 @@ def midpoint(x1,x2,y1,y2):
     print(f"({x},{y})")
     
 def pythag_thrm(a,b):
-    '''gives the length, or size, of the side of a triangle that is missing
+    '''returns the length, or size, of the side of a triangle that is missing
     '''
     a2=a**2
     b2=b**2
