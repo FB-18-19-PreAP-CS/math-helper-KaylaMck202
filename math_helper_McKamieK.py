@@ -37,7 +37,9 @@ def area_circ(r):
     '''gives area of a circle
     '''
     r2= r**2
-    pass
+    r3 = r2*3.14
+    return r3
+    
 def midpoint(x1,x2,y1,y2):
     pass
 def pythag_thrm(a,b,c):
