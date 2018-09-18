@@ -47,8 +47,12 @@ def midpoint(x1,x2,y1,y2):
     y = y3/2
     print(f"({x},{y})")
     
-def pythag_thrm(a,b,c):
-    pass
+def pythag_thrm(a,b):
+    a2=a**2
+    b2=b**2
+    a3=a2+b2
+    a4= math.sqrt(a3)
+    return a4
 
 #def main():
 #    
