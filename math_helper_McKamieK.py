@@ -14,7 +14,11 @@ import math
 #    y1 = input("insert your first y coordinate:")
 #    y2 = input("insert your second y coordinate:")
 def distance(x1,x2,y1,y2):
-        '''should give the distance between two points
+        '''returns the distance between two points
+        >>> distance(4,2,-5,6)
+        11.18033988749895
+        >>> distance(5,9,4,7)
+        5
         '''
         a=x2-x1
         b= y2-y1
@@ -30,7 +34,7 @@ def area_trapezoid(b1,b2,h):
     '''
     b3 = b1+b2
     a= b3*h
-    t= a/2
+    t= a//2
     return t
     
 def area_circ(r):
@@ -41,6 +45,8 @@ def area_circ(r):
     return r3
     
 def midpoint(x1,x2,y1,y2):
+    '''gives the midpoint of a line
+    '''
     x3= x1+x2
     y3= y1+y2
     x = x3/2
@@ -48,6 +54,8 @@ def midpoint(x1,x2,y1,y2):
     print(f"({x},{y})")
     
 def pythag_thrm(a,b):
+    '''gives the length, or size, of the side of a triangle that is missing
+    '''
     a2=a**2
     b2=b**2
     a3=a2+b2
