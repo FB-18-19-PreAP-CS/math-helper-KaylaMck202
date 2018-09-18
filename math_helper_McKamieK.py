@@ -41,7 +41,12 @@ def area_circ(r):
     return r3
     
 def midpoint(x1,x2,y1,y2):
-    pass
+    x3= x1+x2
+    y3= y1+y2
+    x = x3/2
+    y = y3/2
+    print(f"({x},{y})")
+    
 def pythag_thrm(a,b,c):
     pass
 
