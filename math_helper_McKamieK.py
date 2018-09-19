@@ -33,10 +33,16 @@ def distance(x1,x2,y1,y2):
     
 def area_trapezoid(b1,b2,h):
     '''returns the area of a trapezoid
+    >>>area_trapezoid(4,6,5)
+    25
+    >>>area_trapezoid(7,8,10)
+    75
+    >>>area_trapezoid(11,2,3)
+    19.5
     '''
     b3 = b1+b2
     a= b3*h
-    t= a//2
+    t= a/2
     return t
     
 def area_circ(r):
