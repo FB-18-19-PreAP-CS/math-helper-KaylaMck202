@@ -60,6 +60,11 @@ def area_circ(r):
     
 def midpoint(x1,x2,y1,y2):
     '''returns the midpoint of a line
+    >>>midpoint(4,10,6,8)
+    (7,7)
+    >>>midpoint()
+    
+    >>>midpoint()
     '''
     x3= x1+x2
     y3= y1+y2
