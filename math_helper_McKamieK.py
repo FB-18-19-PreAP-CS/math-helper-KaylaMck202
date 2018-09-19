@@ -47,6 +47,12 @@ def area_trapezoid(b1,b2,h):
     
 def area_circ(r):
     '''returns the area of a circle
+    >>>area_circ(6)
+    113.04
+    >>>area_circ(-2)
+    12.56
+    >>>area_circ(11)
+    379.94
     '''
     r2= r**2
     r3 = r2*3.14
