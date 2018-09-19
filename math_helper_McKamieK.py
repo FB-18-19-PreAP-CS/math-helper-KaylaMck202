@@ -62,9 +62,10 @@ def midpoint(x1,x2,y1,y2):
     '''returns the midpoint of a line
     >>>midpoint(4,10,6,8)
     (7,7)
-    >>>midpoint()
-    
-    >>>midpoint()
+    >>>midpoint(6,11,16,-4)
+    (8.5,6)
+    >>>midpoint(18,20,21,6)
+    (19,13.5)
     '''
     x3= x1+x2
     y3= y1+y2
@@ -74,12 +75,19 @@ def midpoint(x1,x2,y1,y2):
     
 def pythag_thrm(a,b):
     '''returns the length, or size, of the side of a triangle that is missing
+    >>>pythag_thrm(10,2)
+    c=10.19803902718557
+    >>>pythag_thrm(5,7)
+    c=8.602325267042627
+    >>>pythag_thrm(-6,-8)
+    c=10
     '''
     a2=a**2
     b2=b**2
     a3=a2+b2
     a4= math.sqrt(a3)
-    return a4
+    print(f"c= {a4}")
+    
 
 #def main():
 #    
