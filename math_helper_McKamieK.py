@@ -110,15 +110,24 @@ def pythag_thrm(a,b):
     a4= math.sqrt(a3)
     print(f"c= {a4}")
 def run_dist():
+    print("You selected distance.")
     x1= int(input("Enter your first x coordinate: "))
     x2= int(input("Enter your second x coordinate: "))
     y1= int(input("Enter your first y coordinate: "))
     y2= int(input("Enter your second y coordinate: "))
-    distance(x1,x2,y1,y2)
+    print("The distance is {}".format(distance(x1,x2,y1,y2)))
+     
+def run_trap():
+    b1= int(input("Enter the first base: "))
+    b2= int(input("Enter the second base: "))
+    h= int(input("Enter the height: "))
+    print("The area of the trapezoid is {}".format(area_trapezoid(b1,b2,h)))
 def main():
     choice=input("Choose a formula from these options:(1)distance, (2)area of a trapezoid, (3)area of a circle, (4)midpoint, or (5)pythag theorem:")
     if choice == "1":
         run_dist()
+    elif choice == "2":
+        run_trap()
 if __name__ == "__main__":
     main()
     
