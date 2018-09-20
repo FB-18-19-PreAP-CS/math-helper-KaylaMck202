@@ -89,7 +89,8 @@ def midpoint(x1,x2,y1,y2):
     y3= y1+y2
     x = x3/2
     y = y3/2
-    print(f"({x},{y})")
+    return x,y
+    #print(f"({x},{y})")
     
 def pythag_thrm(a,b):
     '''returns the length, or size, of the side of a triangle that is missing
@@ -118,16 +119,35 @@ def run_dist():
     print("The distance is {}".format(distance(x1,x2,y1,y2)))
      
 def run_trap():
+    print("You selected area of a trapezoid.")
     b1= int(input("Enter the first base: "))
     b2= int(input("Enter the second base: "))
     h= int(input("Enter the height: "))
     print("The area of the trapezoid is {}".format(area_trapezoid(b1,b2,h)))
+    
+def run_circ():
+    print("You selected area of a circle.")
+    r= int(input("Enter the radius: "))
+    print("The area of the circle is {}".format(area_circ(r)))
+    
+def run_mid():
+    print("You selected midpoint.")
+    x1= int(input("Enter your first x coordinate: "))
+    x2= int(input("Enter your second x coordinate: "))
+    y1= int(input("Enter your first y coordinate: "))
+    y2= int(input("Enter your second y coordinate: "))
+    print("The midpoint is {}".format(midpoint(x1,x2,y1,y2)))
+    
 def main():
     choice=input("Choose a formula from these options:(1)distance, (2)area of a trapezoid, (3)area of a circle, (4)midpoint, or (5)pythag theorem:")
     if choice == "1":
         run_dist()
     elif choice == "2":
         run_trap()
+    elif choice == "3":
+        run_circ()
+    elif choice == "4":
+        run_mid()
 if __name__ == "__main__":
     main()
     
