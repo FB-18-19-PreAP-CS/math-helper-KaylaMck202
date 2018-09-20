@@ -109,7 +109,8 @@ def pythag_thrm(a,b):
     b2=b**2
     a3=a2+b2
     a4= math.sqrt(a3)
-    print(f"c= {a4}")
+    return a4
+    #print(f"c= {a4}")
 def run_dist():
     print("You selected distance.")
     x1= int(input("Enter your first x coordinate: "))
@@ -137,6 +138,12 @@ def run_mid():
     y1= int(input("Enter your first y coordinate: "))
     y2= int(input("Enter your second y coordinate: "))
     print("The midpoint is {}".format(midpoint(x1,x2,y1,y2)))
+
+def run_pythag():
+    print("You selected pythagorean Theorem.")
+    a= int(input("Enter the first side of a triangle: "))
+    b= int(input("Enter the second side of a triangle: "))
+    print("The missing length is {}".format(pythag_thrm(a,b)))
     
 def main():
     choice=input("Choose a formula from these options:(1)distance, (2)area of a trapezoid, (3)area of a circle, (4)midpoint, or (5)pythag theorem:")
@@ -148,6 +155,8 @@ def main():
         run_circ()
     elif choice == "4":
         run_mid()
+    elif choice == "5":
+        run_pythag()
 if __name__ == "__main__":
     main()
     
