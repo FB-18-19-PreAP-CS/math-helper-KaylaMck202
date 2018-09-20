@@ -146,17 +146,19 @@ def run_pythag():
     print("The missing length is {}".format(pythag_thrm(a,b)))
     
 def main():
-    choice=input("Choose a formula from these options:(1)distance, (2)area of a trapezoid, (3)area of a circle, (4)midpoint, or (5)pythag theorem:")
-    if choice == "1":
-        run_dist()
-    elif choice == "2":
-        run_trap()
-    elif choice == "3":
-        run_circ()
-    elif choice == "4":
-        run_mid()
-    elif choice == "5":
-        run_pythag()
+    while True:
+        choice=input("Choose a formula from these options:(1)distance, (2)area of a trapezoid, (3)area of a circle, (4)midpoint, or (5)pythag theorem:")
+        if choice == "1":
+            run_dist()
+        elif choice == "2":
+            run_trap()
+        elif choice == "3":
+            run_circ()
+        elif choice == "4":
+            run_mid()
+        elif choice == "5":
+            run_pythag()
+    
 if __name__ == "__main__":
     main()
     
