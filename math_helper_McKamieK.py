@@ -7,12 +7,6 @@
 
 import math
 
-#
-#if choice == 1:
-#    x1= input("insert your first x coordinate:")
-#    x2 = input("insert your second x coordinate:")
-#    y1 = input("insert your first y coordinate:")
-#    y2 = input("insert your second y coordinate:")
 def distance(x1,x2,y1,y2):
         '''returns the distance between two points
 
@@ -136,10 +130,10 @@ def pythag_thrm(a,b):
     #print(f"c= {a4}")
 def run_dist():
     print("You selected distance.")
-    x1= int(input("Enter your first x coordinate: "))
-    x2= int(input("Enter your second x coordinate: "))
-    y1= int(input("Enter your first y coordinate: "))
-    y2= int(input("Enter your second y coordinate: "))
+    x1= float(input("Enter your first x coordinate: "))
+    x2= float(input("Enter your second x coordinate: "))
+    y1= float(input("Enter your first y coordinate: "))
+    y2= float(input("Enter your second y coordinate: "))
     print("The distance is {}".format(distance(x1,x2,y1,y2)))
      
 def run_trap():
@@ -170,7 +164,8 @@ def run_pythag():
     
 def main():
     while True:
-        choice=input("Choose a formula from these options:\n(1)distance\n(2)area of a trapezoid\n(3)area of a circle\n(4)midpoint\n(5)pythag theorem\n> ")
+        choice=input("Choose a formula from these options:\n(1)distance\n(2)area of a trapezoid\n(3)area of a circle\n(4)midpoint\n(5)pythag theorem.\nIf you would like to quit, enter 0\n> ")
+        #end = input("If you would like to quit please enter 0")
         if choice == "1":
             run_dist()
         elif choice == "2":
@@ -181,6 +176,9 @@ def main():
             run_mid()
         elif choice == "5":
             run_pythag()
+        elif choice == "0":
+            print("Thank you for using math_helper!")
+            break
     
 if __name__ == "__main__":
     #import doctest
