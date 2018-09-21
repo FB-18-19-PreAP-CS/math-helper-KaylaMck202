@@ -6,8 +6,6 @@
 '''
 
 import math
-import doctest
-#doctest.testmod()
 
 #
 #if choice == 1:
@@ -172,7 +170,7 @@ def run_pythag():
     
 def main():
     while True:
-        choice=input("Choose a formula from these options:(1)distance, (2)area of a trapezoid, (3)area of a circle, (4)midpoint, or (5)pythag theorem:")
+        choice=input("Choose a formula from these options:\n(1)distance\n(2)area of a trapezoid\n(3)area of a circle\n(4)midpoint\n(5)pythag theorem\n> ")
         if choice == "1":
             run_dist()
         elif choice == "2":
@@ -185,7 +183,7 @@ def main():
             run_pythag()
     
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    #import doctest
+    #doctest.testmod()
     main()
     
