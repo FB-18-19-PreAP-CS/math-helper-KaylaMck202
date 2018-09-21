@@ -138,34 +138,33 @@ def run_dist():
      
 def run_trap():
     print("You selected area of a trapezoid.")
-    b1= int(input("Enter the first base: "))
-    b2= int(input("Enter the second base: "))
-    h= int(input("Enter the height: "))
+    b1= float(input("Enter the first base: "))
+    b2= float(input("Enter the second base: "))
+    h= float(input("Enter the height: "))
     print("The area of the trapezoid is {}".format(area_trapezoid(b1,b2,h)))
     
 def run_circ():
     print("You selected area of a circle.")
-    r= int(input("Enter the radius: "))
+    r= float(input("Enter the radius: "))
     print("The area of the circle is {}".format(area_circ(r)))
     
 def run_mid():
     print("You selected midpoint.")
-    x1= int(input("Enter your first x coordinate: "))
-    x2= int(input("Enter your second x coordinate: "))
-    y1= int(input("Enter your first y coordinate: "))
-    y2= int(input("Enter your second y coordinate: "))
+    x1= float(input("Enter your first x coordinate: "))
+    x2= float(input("Enter your second x coordinate: "))
+    y1= float(input("Enter your first y coordinate: "))
+    y2= float(input("Enter your second y coordinate: "))
     print("The midpoint is {}".format(midpoint(x1,x2,y1,y2)))
 
 def run_pythag():
     print("You selected pythagorean Theorem.")
-    a= int(input("Enter the first side of a triangle: "))
-    b= int(input("Enter the second side of a triangle: "))
+    a= float(input("Enter the first side of a triangle: "))
+    b= float(input("Enter the second side of a triangle: "))
     print("The missing length is {}".format(pythag_thrm(a,b)))
     
 def main():
     while True:
         choice=input("Choose a formula from these options:\n(1)distance\n(2)area of a trapezoid\n(3)area of a circle\n(4)midpoint\n(5)pythag theorem.\nIf you would like to quit, enter 0\n> ")
-        #end = input("If you would like to quit please enter 0")
         if choice == "1":
             run_dist()
         elif choice == "2":
