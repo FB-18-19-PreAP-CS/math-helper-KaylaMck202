@@ -19,19 +19,19 @@ def distance(x1,x2,y1,y2):
         '''returns the distance between two points
 
         >>> distance(4,2,-5,6)
-        11.18033988749895
+        11.18
         
         >>> distance(5,9,4,7)
         5.0
         
         >>> distance(10,15,6,12)
-        7.810249675906654
+        7.81
         
         >>> distance(1,0.5,2,7.6)
-        5.622277118748239
+        5.62
         
         >>> distance(-7,9,5,6.5)
-        16.0701586799882
+        16.07
         '''
         a=x2-x1
         b= y2-y1
@@ -39,7 +39,7 @@ def distance(x1,x2,y1,y2):
         d= b*b
         e=c + d
         f=math.sqrt(e)
-        return f
+        return(round(f,2))
         
     
 def area_trapezoid(b1,b2,h):
@@ -63,7 +63,7 @@ def area_trapezoid(b1,b2,h):
     b3 = b1+b2
     a= b3*h
     t= a/2
-    return t
+    return(round(t,1))
     
 def area_circ(r):
     '''returns the area of a circle
@@ -116,25 +116,25 @@ def pythag_thrm(a,b):
     '''returns the length, or size, of the side of a triangle that is missing
 
     >>> pythag_thrm(10,2)
-    10.19803902718557
+    10.2
     
     >>> pythag_thrm(5,7)
-    8.602325267042627
+    8.6
     
     >>> pythag_thrm(-6,-8)
     10.0
     
     >>> pythag_thrm(4,7)
-    8.062257748
+    8.06
     
     >>> pythag_thrm(-3.5,7.2)
-    8.005623024
+    8.01
     '''
     a2=a**2
     b2=b**2
     a3=a2+b2
     a4= math.sqrt(a3)
-    return a4
+    return(round(a4,2))
     #print(f"c= {a4}")
 def run_dist():
     print("You selected distance.")
