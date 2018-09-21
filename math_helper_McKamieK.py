@@ -32,8 +32,7 @@ def distance(x1,x2,y1,y2):
         e=c + d
         f=math.sqrt(e)
         return(round(f,2))
-        
-    
+           
 def area_trapezoid(b1,b2,h):
     '''returns the area of a trapezoid
 
@@ -102,7 +101,6 @@ def midpoint(x1,x2,y1,y2):
     x = x3/2
     y = y3/2
     return x,y
-    #print(f"({x},{y})")
     
 def pythag_thrm(a,b):
     '''returns the length, or size, of the side of a triangle that is missing
@@ -127,7 +125,7 @@ def pythag_thrm(a,b):
     a3=a2+b2
     a4= math.sqrt(a3)
     return(round(a4,2))
-    #print(f"c= {a4}")
+
 def run_dist():
     print("You selected distance.")
     x1= float(input("Enter your first x coordinate: "))
