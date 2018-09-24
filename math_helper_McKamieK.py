@@ -137,13 +137,21 @@ def run_dist():
 def run_trap():
     print("You selected area of a trapezoid.")
     b1= float(input("Enter the first base: "))
+    if b1 < 0:
+        raise ValueError("Negatives cannot be used in finding the area of a trapezoid")
     b2= float(input("Enter the second base: "))
+    if b2 < 0:
+        raise ValueError("Negatives cannot be used in finding the area of a trapezoid")
     h= float(input("Enter the height: "))
+    if h < 0:
+        raise ValueError("Negatives cannot be used in finding the area of a trapezoid")
     print("The area of the trapezoid is {}".format(area_trapezoid(b1,b2,h)))
     
 def run_circ():
     print("You selected area of a circle.")
     r= float(input("Enter the radius: "))
+    if r < 0:
+        raise ValueError("Negatives cannot be used in finding the area of a circle")
     print("The area of the circle is {}".format(area_circ(r)))
     
 def run_mid():
@@ -157,9 +165,9 @@ def run_mid():
 def run_pythag():
     print("You selected pythagorean Theorem.")
     a= float(input("Enter the first side of a triangle: "))
-    b= float(input("Enter the second side of a triangle: "))
     if a == 0:
         raise ValueError("0 cannot be used with the pythag theorem")
+    b= float(input("Enter the second side of a triangle: "))
     if b == 0:
         raise ValueError("0 cannot be used with the pythag theorem")
     print("The missing length is {}".format(pythag_thrm(a,b)))
