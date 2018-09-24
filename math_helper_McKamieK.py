@@ -158,6 +158,10 @@ def run_pythag():
     print("You selected pythagorean Theorem.")
     a= float(input("Enter the first side of a triangle: "))
     b= float(input("Enter the second side of a triangle: "))
+    if a == 0:
+        raise ValueError("0 cannot be used with the pythag theorem")
+    if b == 0:
+        raise ValueError("0 cannot be used with the pythag theorem")
     print("The missing length is {}".format(pythag_thrm(a,b)))
     
 def main():
