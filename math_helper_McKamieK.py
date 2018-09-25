@@ -133,6 +133,9 @@ def run_dist():
     y1= float(input("Enter your first y coordinate: "))
     y2= float(input("Enter your second y coordinate: "))
     print("The distance is {}".format(distance(x1,x2,y1,y2)))
+
+        
+
      
 def run_trap():
     print("You selected area of a trapezoid.")
@@ -146,6 +149,9 @@ def run_trap():
     if h < 0:
         raise ValueError("Negatives cannot be used in finding the area of a trapezoid")
     print("The area of the trapezoid is {}".format(area_trapezoid(b1,b2,h)))
+
+        
+
     
 def run_circ():
     print("You selected area of a circle.")
@@ -153,6 +159,9 @@ def run_circ():
     if r < 0:
         raise ValueError("Negatives cannot be used in finding the area of a circle")
     print("The area of the circle is {}".format(area_circ(r)))
+
+        
+
     
 def run_mid():
     print("You selected midpoint.")
@@ -161,6 +170,9 @@ def run_mid():
     y1= float(input("Enter your first y coordinate: "))
     y2= float(input("Enter your second y coordinate: "))
     print("The midpoint is {}".format(midpoint(x1,x2,y1,y2)))
+
+        
+
 
 def run_pythag():
     print("You selected pythagorean Theorem.")
@@ -171,7 +183,7 @@ def run_pythag():
     if b == 0:
         raise ValueError("0 cannot be used with the pythag theorem")
     print("The missing length is {}".format(pythag_thrm(a,b)))
-    
+
 def main():
     while True:
         choice=input("Choose a formula from these options:\n(1)distance\n(2)area of a trapezoid\n(3)area of a circle\n(4)midpoint\n(5)pythag theorem.\nIf you would like to quit, enter 0\n> ")
@@ -186,6 +198,10 @@ def main():
         elif choice == "5":
             run_pythag()
         elif choice == "0":
+            print("Thank you for using math_helper!")
+            break
+        end = input("Do you want to use another formula? (y/n):")
+        if end == "n":
             print("Thank you for using math_helper!")
             break
     
