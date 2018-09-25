@@ -46,7 +46,7 @@ def area_trapezoid(b1,b2,h):
      19.5
      
      >>> area_trapezoid(-4,6,12)
-     12.0
+     ValueError("Negatives cannot be used in finding the area of a trapezoid")
      
      >>> area_trapezoid(11,0.5,7.6)
      43.7
@@ -63,7 +63,7 @@ def area_circ(r):
     113.04
     
     >>> area_circ(-2)
-    12.56
+    ValueError("Negatives cannot be used in finding the area of a circle")
     
     >>> area_circ(11)
     379.94
@@ -72,7 +72,7 @@ def area_circ(r):
     3.46185
     
     >>> area_circ(-8.9)
-    248.7194
+    ValueError("Negatives cannot be used in finding the area of a circle")
     '''
     r2= r**2
     r3 = r2*3.14
