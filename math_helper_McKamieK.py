@@ -186,24 +186,34 @@ def run_pythag():
 
 def main():
     while True:
-        choice=input("Choose a formula from these options:\n(1)distance\n(2)area of a trapezoid\n(3)area of a circle\n(4)midpoint\n(5)pythag theorem.\nIf you would like to quit, enter 0\n> ")
-        if choice == "1":
-            run_dist()
-        elif choice == "2":
-            run_trap()
-        elif choice == "3":
-            run_circ()
-        elif choice == "4":
-            run_mid()
-        elif choice == "5":
-            run_pythag()
-        elif choice == "0":
-            print("Thank you for using math_helper!")
-            break
-        end = input("Do you want to use another formula? (y/n):")
-        if end == "n":
-            print("Thank you for using math_helper!")
-            break
+        try:
+            choice=input("Choose a formula from these options:\n(1)distance\n(2)area of a trapezoid\n(3)area of a circle\n(4)midpoint\n(5)pythag theorem.\nIf you would like to quit, enter 0\n> ")
+            if choice == "1":
+                run_dist()
+            elif choice == "2":
+                run_trap()
+            elif choice == "3":
+                run_circ()
+            elif choice == "4":
+                run_mid()
+            elif choice == "5":
+                run_pythag()
+            elif choice == "0":
+                print("Thank you for using math_helper!")
+                break
+            end = input("Do you want to use another formula? (y/n):")
+            if end == "n":
+                print("Thank you for using math_helper!")
+                break
+        
+        except ValueError as e:
+            if 'could not convert string to float:' in str(e) or 'invalid literal for int() with base 10' in str(e):
+                print('invalid input')
+            else:
+                print('Error: ' +str(e))
+    
+        except Exception:
+            print("Invalid input")
     
 if __name__ == "__main__":
     #import doctest
