@@ -127,6 +127,10 @@ def pythag_thrm(a,b):
     return(round(a4,2))
 
 def run_dist():
+    ''' allows the user to insert a first x coordinate, second x
+        coordinate, first y coordinate, and second y coordinate.
+        It also prints out the answer.
+    '''
     print("You selected distance.")
     x1= float(input("Enter your first x coordinate: "))
     x2= float(input("Enter your second x coordinate: "))
@@ -138,6 +142,10 @@ def run_dist():
 
      
 def run_trap():
+    ''' allows the user to insert the first base, second base,
+        and height of the trapezoid. It also prints out the
+        answer.
+    '''
     print("You selected area of a trapezoid.")
     b1= float(input("Enter the first base: "))
     if b1 < 0:
@@ -154,6 +162,9 @@ def run_trap():
 
     
 def run_circ():
+    ''' allows the user to insert the radius of their circle
+        and print out an answer.
+    '''
     print("You selected area of a circle.")
     r= float(input("Enter the radius: "))
     if r < 0:
@@ -164,6 +175,10 @@ def run_circ():
 
     
 def run_mid():
+    ''' allows the user to insert a first x coordinate, second x
+        coordinate, first y coordinate, and second y coordinate.
+        It will also print out the answer.
+    '''
     print("You selected midpoint.")
     x1= float(input("Enter your first x coordinate: "))
     x2= float(input("Enter your second x coordinate: "))
@@ -175,6 +190,9 @@ def run_mid():
 
 
 def run_pythag():
+    ''' allows the user to insert numbers for sides a and b of a triangle.
+        It also prints out the answer
+    '''
     print("You selected pythagorean Theorem.")
     a= float(input("Enter the first side of a triangle: "))
     if a == 0:
@@ -185,6 +203,9 @@ def run_pythag():
     print("The missing length is {}".format(pythag_thrm(a,b)))
 
 def main():
+    ''' allows the user to choose what equation they
+        want to use or if they want to quit.
+    '''
     while True:
         try:
             choice=input("Choose a formula from these options:\n(1)distance\n(2)area of a trapezoid\n(3)area of a circle\n(4)midpoint\n(5)pythag theorem.\nIf you would like to quit, enter 0\n> ")
